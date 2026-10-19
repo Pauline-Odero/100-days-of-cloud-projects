@@ -1,7 +1,7 @@
 Customizing Subnets inside a Default AWS VPC
 
 ## Objective
-Create a new subnet named 'datacenter-subnet' inside the default AWS VPC using both the AWS Management COnsole and the AWS CLI
+Create a new subnet named 'datacenter-subnet' inside the default AWS VPC using both the AWS Management Console and the AWS CLI
 
 ## What I Did
 1. **Identified the Default VPC: ** Located the default VPC ID in the `us-east-1` region
@@ -17,3 +17,4 @@ aws ec2 describe-subnets \
 --query "Subnets[*].{ID:SubnetId,CIDR:CidrBock,AZ:AvailabilityZone}"\
 --output table
 ```
+
